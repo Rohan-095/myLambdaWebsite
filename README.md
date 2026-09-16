@@ -133,3 +133,11 @@ This project demonstrates practical experience with:
 * CI/CD automation
 * GitHub Actions
 * AWS Lambda deployment
+* ## CI/CD Status
+
+Every push to the `main` branch automatically:
+
+1. Validates the Lambda code
+2. Packages the application
+3. Authenticates with AWS using GitHub OIDC
+4. Deploys the latest code to AWS Lambda
