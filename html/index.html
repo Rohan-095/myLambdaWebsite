@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan Qamar | Cloud &amp; DevOps Engineer</title>
+  <link rel="stylesheet" href="/web/css/main.css">
+  <link rel="icon" href="data:,">
+  <script type="text/javascript" src="/web/js/main.js" defer></script>
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <header class="navbar">
+    <div class="wrap navbar-inner">
+      <a href="/web/" class="brand">
+        <svg class="brand-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cloudGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ff9d42"/>
+              <stop offset="100%" stop-color="#3ddcff"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#cloudGrad)" d="M34 20.5c-.7-5.1-5-9-10.2-9-4 0-7.5 2.4-9.1 5.9C10 17.9 6 21.9 6 26.8 6 32 10.1 36 15.1 36h18.4c4.7 0 8.5-3.9 8.5-8.6 0-4.5-3.5-8.2-8-8.9z"/>
+        </svg>
+        <span>Rohan Qamar</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">This Site</a>
+        <a href="/web/html/contact.html" class="btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">&#9679; Available for cloud &amp; DevOps opportunities</p>
+      <h1>Building reliable, <span class="grad-text">cloud-native</span> systems.</h1>
+      <p class="hero-sub">
+        Software engineer focused on <strong>AWS</strong>, infrastructure automation, and DevOps —
+        shipping AI automation and web platforms, and leveling up toward Solutions Architect–grade
+        cloud infrastructure.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="/web/html/contact.html" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span class="pill">AWS</span>
+        <span class="pill">Terraform</span>
+        <span class="pill">Docker</span>
+        <span class="pill">Kubernetes</span>
+        <span class="pill">CI/CD</span>
+        <span class="pill">Linux</span>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <h2 class="section-title"><span class="tag">01</span> About</h2>
+      <div class="card about-card">
+        <p>
+          I'm a software engineer working across AI automation, client-facing web products, and
+          automation workflows. Since graduating with a Bachelor's in Software Engineering, I've been
+          deliberately building hands-on cloud and DevOps skill &mdash; pushing toward AWS Solutions
+          Architect certification and building out a portfolio of infrastructure projects covering
+          Terraform, CI/CD pipelines, containerization, Kubernetes security, and monitoring.
+        </p>
+        <p>
+          I like systems that are automated, observable, and boring in the best way &mdash; infrastructure
+          that just works so the product team doesn't have to think about it.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section wrap">
+      <h2 class="section-title"><span class="tag">02</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="card skill-card">
+          <h3>Cloud</h3>
+          <p>AWS (Lambda, API Gateway, S3, EC2, IAM) &middot; Solutions Architect track</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform &middot; reproducible, version-controlled environments</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Containers &amp; Orchestration</h3>
+          <p>Docker &middot; Kubernetes &middot; container security basics</p>
+        </div>
+        <div class="card skill-card">
+          <h3>CI/CD</h3>
+          <p>Automated build, test &amp; deploy pipelines</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Monitoring</h3>
+          <p>Observability &amp; alerting for production systems</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Web &amp; Automation</h3>
+          <p>Node.js &middot; JavaScript &middot; WordPress &middot; AI-driven automation workflows</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <h2 class="section-title"><span class="tag">03</span> Projects</h2>
+      <div class="projects-grid">
+        <div class="card project-card">
+          <h3>Code Flow</h3>
+          <p class="project-tag">Final Year Project</p>
+          <p>A drag-and-drop flowchart-to-code tool &mdash; turning visual logic into working code.</p>
+        </div>
+        <div class="card project-card">
+          <h3>DevOps Portfolio</h3>
+          <p class="project-tag">In progress</p>
+          <p>A set of infrastructure projects spanning Terraform provisioning, CI/CD pipelines,
+          containerization, Kubernetes security hardening, and monitoring stacks.</p>
+        </div>
+        <div class="card project-card">
+          <h3>This Website</h3>
+          <p class="project-tag">Serverless</p>
+          <p>You're looking at it &mdash; a static site served entirely from AWS Lambda behind API Gateway,
+          no server to manage.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section wrap">
+      <h2 class="section-title"><span class="tag">04</span> How This Site Runs</h2>
+      <div class="card stack-card">
+        <div class="stack-flow">
+          <div class="stack-node">Browser</div>
+          <div class="stack-arrow">&rarr;</div>
+          <div class="stack-node">API Gateway</div>
+          <div class="stack-arrow">&rarr;</div>
+          <div class="stack-node">Lambda</div>
+          <div class="stack-arrow">&rarr;</div>
+          <div class="stack-node">Static Files</div>
+        </div>
+        <p>
+          No EC2 instance, no always-on server. A single Lambda function reads these HTML, CSS,
+          JS, and asset files straight out of its deployment package and returns them through an
+          API Gateway proxy integration &mdash; fully serverless, pay-per-request.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 Rohan Qamar</span>
+      <span class="footer-dot">&middot;</span>
+      <span>Deployed on AWS Lambda + API Gateway</span>
+    </div>
+  </footer>
+
+</body>
+</html>
