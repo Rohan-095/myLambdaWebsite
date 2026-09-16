@@ -1,0 +1,33 @@
+name: Deploy Lambda
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::452408358973:role/GitHubActions-myLambdaWebsite
+          aws-region: ap-northeast-1
+
+      - name: Validate
+        run: node --check index.js
+
+      - name: Package
+        run: zip -r lambda.zip . -x ".git/*" ".github/*" "lambda.zip" "*.json"
+
+      - name: Deploy
+        run: aws lambda update-function-code --function-name myLambdaWebsite --zip-file fileb://lambda.zip
